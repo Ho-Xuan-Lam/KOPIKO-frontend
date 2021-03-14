@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOPIKO</title>
+    <!-- <script type="script" src="./asset/jqueri/jquery-3.6.0.js"></script> -->
+    <!-- <link rel="stylesheet" href="./asset/bootstrap-4.5.3/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./asset/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="./asset/plugins/font-awesome/css/all.min.css">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/main.css">
+    <link rel="stylesheet" href="./asset/css/base.css">
+    <link rel="stylesheet" href="./asset/css/modal.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/cart-page.css">
+    <link rel="stylesheet" href="./asset/css/reponsive.css">
+    
+</head>
+<body>
+    <div class="appkopiko">
+        <!-- Header -->
+        <header class="header">
+            <!-- Heading -->
+            <div class="heading">
+                <div class="container-private">
+                    <div class="heading__socials">
+                        <ul class="heading__socials-list">
+                            <li><a href=""><i class="heading__socials-icon fab fa-facebook"></i></a></li>
+                            <li><a href=""><i class="heading__socials-icon fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="heading__socials-icon fab fa-twitter-square"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="heading__welcome">
+                        <span class="heading__welcome-content">Chào mừng đến với KopiKo</span>
+                        <i class="heading__welcome-icon fas fa-heart"></i>
+                    </div>
+
+                    <!-- <div class="heading__log">
+                        <ul class="heading__log-io">
+                            <li class="heading__log-items"><a onclick="document.getElementById('login').style.display='block'" class="heading__log-link" href="#">Đăng nhập</a></li>
+                            <li class="heading__log-items"><a onclick="document.getElementById('register').style.display='block'" class="heading__log-link" href="#">Đăng ký</a></li>
+                        </ul>
+                    </div> -->
+
+                    <!-- Header Navbar User -->
+                    <div class="heading__navbar-user">
+                        <img src="./asset/img/avatar.jpg" alt="" class="heading__navbar-user-img">
+                        <a href="#" class="heading__navbar-user-name">Nghĩa</a>
+
+                        <ul class="heading__navbar-user-menu">
+                            <li class="heading__navbar-user-item">
+                                <a href="">Tài khoản của tôi</a>
+                            </li>
+                            <li class="heading__navbar-user-item">
+                                <a href="">Địa chỉ của tôi</a>
+                            </li>
+                            <li class="heading__navbar-user-item">
+                                <a href="">Đơn mua của tôi</a>
+                            </li>
+                            <li class="heading__navbar-user-item">
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- End Header Navbar User -->
+                </div>
+            </div>
+            <!-- End Heading -->
+                
+            <!-- Header with Search -->
+            <div id="myHeader" class="header-with-search">
+                <div class="container-private">
+                    <!-- Header responsive -->
+                        <div class="header__responsive">                           
+                            <!-- Menu bars -->
+                    
+                            <label for="nav-mobile-input" class="nav__bars-btn">
+                                <i class="nav__bars-btn--icon fas fa-bars"></i>
+                            </label>
+                            <input type="checkbox" hidden class="nav__input" id="nav-mobile-input">
+                            <label for="nav-mobile-input" class="nav__overlay"></label> 
+                            <nav class="nav__mobile">
+                                <label for="nav-mobile-input" class="nav__mobile-close">
+                                    <i class="fas fa-times"></i>
+                                </label>
+                                <ul class="nav__mobile-list">
+                                    <li class="nav__mobile-list-item">
+                                        <div class="header__search header__search-mobile">
+                                            <div class="header__search-input-wrap">
+                                                <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">   
+                                                <div class="header__search-history">
+                                                    <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                                    <ul class="header__search-history-list">
+                                                        <li class="header__search-history-item">
+                                                            <a href="">Áo khoác</a>
+                                                        </li>
+                                                        <li class="header__search-history-item">
+                                                            <a href="">Áo sơ mi</a>
+                                                        </li>
+                                                        <li class="header__search-history-item">
+                                                            <a href="">Quần ka ki</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>                                             
+                                            </div>                                           
+                                            <button class="header__search-btn">
+                                                <i class="header__search-btn-icon fas fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="nav__mobile-list-item">
+                                        <a href="#" class="nav__mobile-link">TRANG CHỦ</a>
+                                    </li>
+                                    <li class="nav__mobile-list-item">
+                                        <a href="#" class="nav__mobile-link">MỚI</a>
+                                    </li>
+                                    <li class="nav__mobile-list-item">
+                                        <a href="#" class="nav__mobile-link">THỜI TRANG NAM</a>
+                                    </li>
+                                    <li class="nav__mobile-list-item">
+                                        <a href="#" class="nav__mobile-link">THỜI TRANG NỮ</a>
+                                    </li>
+                                    <li class="nav__mobile-list-item">
+                                        <a href="#" class="nav__mobile-link">SALE</a>
+                                    </li>
+                                    <li class="nav__mobile-list-item">
+                                        <a href="#" class="nav__mobile-link">THƯƠNG HIỆU</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    <!--End Header responsive -->
+
+                    <div class="header__logo">
+                        <a href="index.html"><img src="./asset/img/KopiKo.png" alt="Logo" class="header__logo-img"></a>
+                    </div>
+                    
+                    <div class="header__search">
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-history-item">
+                                        <a href="">Áo khoác</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Áo sơ mi</a>
+                                    </li>
+                                    <li class="header__search-history-item">
+                                        <a href="">Quần ka ki</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <button class="header__search-btn">
+                            <i class="header__search-btn-icon fas fa-search"></i>
+                        </button>
+                    </div>
+                    
+                    <!-- Header Cart -->
+                    <!-- <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            Header No Item Cart  header__cart-list--no-cart
+                            <div class="header__cart-list">
+                                <img src="./asset/img/no_cart.png" alt="No Cart" class="header__cart-no-cart-img">
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Cart -->
+                    <div class="header__cart">
+                        <div class="header__cart-wrap">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notice">3</span>
+                            <!-- No cart  header__cart-list--no-cart -->
+                            <div class="header__cart-list">
+                                <img src="./assets/img/no_cart.png" alt="No Cart" class="header__cart-no-cart-img">
+                                <span class="header__cart-no-cart-msg">Chưa có sản phẩm</span>
+
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+                                    <li class="header__cart-item">
+                                        <img src="./asset/img/avatar.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                <div class="header__cart-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">
+                                                    Phân loại: Bạc
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./asset/img/avatar.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                <div class="header__cart-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">
+                                                    Phân loại: Bạc
+                                                </span>
+                                                <span class="header__cart-item-remove">Xoá</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./asset/img/avatar.jpg" alt="" class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Bộ kem đặc trị vùng mắt</h5>
+                                                <div class="header__cart-price-wrap">
+                                                    <span class="header__cart-item-price">2.000.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-qnt">1</span>
+                                                </div>
+                                            </div>
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-desc">
+                                                    Phân loại: Bạc
+                                                </span>
+                                                <a href="#" class="header__cart-item-remove">Xoá</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <a href="cart-page.html" class="header__cart-view btn btn-primary">Xem giỏ hàng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- End Header with Search -->
+            
+            <!-- Header Navbar -->
+            <div class="header__navbar-wrap">
+                <div class="container-private">
+                    <div class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-items"><a class="header__navbar-items-link" href="">TRANG CHỦ</a></li>
+                            <li class="header__navbar-items"><a class="header__navbar-items-link" href="">MỚI</a></li>
+                            <li class="header__navbar-items">
+                                <a class="header__navbar-items-link" href="">THỜI TRANG NAM</a>
+                                <div class="header__navbar-detail">
+                                    <ul class="header__navbar-detail-list">
+                                        <li class="header__navbar-detail-items"><a href="" class="header__navbar-detail-link">Hoodie</a></li>
+                                        <li class="header__navbar-detail-items"><a href="" class="header__navbar-detail-link">Coat</a></li>
+                                        <li class="header__navbar-detail-items"><a href="" class="header__navbar-detail-link">T-Shirt</a></li>
+                                        <li class="header__navbar-detail-items"><a href="" class="header__navbar-detail-link">Sweater</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__navbar-items">
+                                <a class="header__navbar-items-link" href="">THỜI TRANG NỮ</a>
+                                <div class="header__navbar-detail">
+                                    <ul class="header__navbar-detail-list">
+                                        <li class="header__navbar-detail-items"><a href="" class="header__navbar-detail-link">Hoodie</a></li>
+                                        <li class="header__navbar-detail-items"><a href="" class="header__navbar-detail-link">Coat</a></li>
+                                        <li class="header__navbar-detail-items"><a href="" class="header__navbar-detail-link">T-Shirt</a></li>
+                                        <li class="header__navbar-detail-items"><a href="" class="header__navbar-detail-link">Sweater</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="header__navbar-items"><a class="header__navbar-items-link" href="">SALE</a></li>
+                            <li class="header__navbar-items"><a class="header__navbar-items-link" href="">THƯƠNG HIỆU</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- End Header Navbar -->
+            <!--  -->
+   
+        </header>
+        <!-- End Header -->
+    
+        <!-- container-private -->
+        <div class="cart-content">
+            <div class="container-private cart-content-container">
+                <!-- No Cart -->
+                <div class="no-cart">
+                    <span class="no-cart__content">Chưa có sản phẩm nào trong giỏ hàng!</span>
+                    <a href="index.html" class="btn btn-return">QUAY TRỞ LẠI CỬA HÀNG</a>
+                </div>
+                <!-- End No Cart -->
+
+                <!-- Has cart -->
+                <div class="has-cart">
+                    <div class="has-cart__list-item">
+                        <table class="cart-list__table">
+                            <thead>
+                                <tr class="cart-list__table-header">
+                                    <td class="cart-list__table-header-1">SẢN PHẨM</td>
+                                    <td class="cart-list__table-header-2">GIÁ</td>
+                                    <td class="cart-list__table-header-3">SỐ LƯỢNG</td>
+                                    <td class="cart-list__table-header-4">TỔNG</td>
+                                </tr>
+                            </thead>
+                            <tbody class="cart-list__table-body">
+                                <tr class="cart-list__table-item">
+                                    <td>
+                                        <div class="table-item__header">
+                                            <a href="#" class="table-item__header-delete"><i class="far fa-times-circle"></i></a>
+                                            <img src="./asset/img/avatar.jpg" alt="" class="table-item__header-img">
+                                            <div class="table-item__header-type">Classic</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-item__price">700.000đ</div>
+                                    </td>
+                                    <td>
+                                        <!-- <div class="table-item__quantity">1</div> -->
+                                        <div class="add-respon-sl table-item__quantity">
+                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number float-left fas fa-minus"  data-type="minus" data-field=""></button>                               
+                                            <input type="text" id="quantity" name="quantity" class="form-control input-number float-left" value="1" min="1" max="100">                               
+                                            <button type="button" class="quantity-right-plus btn btn-success btn-number float-left fas fa-plus" data-type="plus" data-field=""></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-item__total">700.000đ</div>
+                                    </td>
+                                </tr>
+                                <tr class="cart-list__table-item">
+                                    <td>
+                                        <div class="table-item__header">
+                                            <a href="#" class="table-item__header-delete"><i class="far fa-times-circle"></i></a>
+                                            <img src="./asset/img/avatar.jpg" alt="" class="table-item__header-img">
+                                            <div class="table-item__header-type">Classic</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-item__price">700.000đ</div>
+                                    </td>
+                                    <td>
+                                        <!-- <div class="table-item__quantity">1</div> -->
+                                        <div class="add-respon-sl table-item__quantity">
+                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number float-left fas fa-minus"  data-type="minus" data-field=""></button>                               
+                                            <input type="text" id="quantity-1" name="quantity" class="form-control input-number float-left" value="1" min="1" max="100">                               
+                                            <button type="button" class="quantity-right-plus btn btn-success btn-number float-left fas fa-plus" data-type="plus" data-field=""></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-item__total">700.000đ</div>
+                                    </td>
+                                </tr>
+                                <tr class="cart-list__table-item">
+                                    <td>
+                                        <div class="table-item__header">
+                                            <a href="#" class="table-item__header-delete"><i class="far fa-times-circle"></i></a>
+                                            <img src="./asset/img/avatar.jpg" alt="" class="table-item__header-img">
+                                            <div class="table-item__header-type">Classic</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-item__price">700.000đ</div>
+                                    </td>
+                                    <td>
+                                        <!-- <div class="table-item__quantity">1</div> -->
+                                        <div class="add-respon-sl table-item__quantity">
+                                            <button type="button" class="quantity-left-minus btn btn-danger btn-number float-left fas fa-minus"  data-type="minus" data-field=""></button>                               
+                                            <input type="text" id="quantity-2" name="quantity" class="form-control input-number float-left" value="1" min="1" max="100">                               
+                                            <button type="button" class="quantity-right-plus btn btn-success btn-number float-left fas fa-plus" data-type="plus" data-field=""></button>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="table-item__total">700.000đ</div>
+                                    </td>
+                                </tr>
+                                <tr class="cart-list__table-item">
+                                    <td><a href="index.html" class="btn btn-return btn-continue"><i class="fas fa-long-arrow-alt-left cart-list__table-item-icon"></i>TRỞ VỀ</a></td>
+                                    <td><a href="#" class="btn btn-return btn-update-cart">UPDATE</a></td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                    </div>
+                    <div class="has-cart__pay">
+                        <div class="has-cart__pay-detail">
+                            <table class="cart-list__table-pay">
+                                <thead>
+                                    <tr class="table-pay__header">
+                                        <td class="table-pay__header-total">TỔNG SỐ LƯỢNG</td>
+                                        <td class="table-pay__header-total-2"></td>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-pay__body">
+                                    <tr class="table-pay__body-row">
+                                        <td>
+                                            <div class="table-pay__body-total">Tổng phụ</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-pay__body-price table-item__price">700.000đ</div>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-pay__body-row">
+                                        <td>
+                                            <div class="table-pay__body-shipping">Giao hàng</div>
+                                        </td>
+                                        <td>
+                                            <ul class="table-pay__body-ship-detail">
+                                                <li class="pay__ship-detail">Giao hàng miễn phí</li>
+                                                <li class="pay__ship-detail">Ước tính cho Việt Nam</li>
+                                                <li class="pay__ship-detail">Đổi địa chỉ</li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-pay__body-row">
+                                        <td>
+                                            <div class="table-pay__body-total">Tổng</div>
+                                        </td>
+                                        <td>
+                                            <div class="table-pay__body-price table-item__price">700.000đ</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="btn-offer">
+                                        </td>
+                                        <td class="btn-offer">
+                                            <a href="#" class="btn btn-return btn-update-cart btn-offer">THANH TOÁN</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+                        </div>
+
+                        <div class="has-cart__pay-offer">
+                            <table class="cart-list__table-pay-offer">
+                                <thead>
+                                    <tr class="table-pay__offer-header">
+                                        <td class="table-pay__offer-header">Phiếu ưu đãi</td>
+                                    </tr>
+                                </thead>
+                                <tbody class="table-pay-offer__body">
+                                    <tr class="table-pay-offer__body-input">
+                                        <td>
+                                            <input class="table-pay-offer__body-input-btn" type="text" placeholder="Mã ưu đãi">
+                                        </td>
+                                    </tr>
+                                    <tr class="table-pay-offer__body-btn">
+                                        <td>
+                                            <a href="#" class="btn btn-return btn-update-cart btn-offer">ÁP DỤNG</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                                
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End container-private -->
+    
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-wrap">
+                <div class="container-private">
+                    <div class="footer__contact together__block">
+                        <h2 class="footer__contact-title">
+                            THÔNG TIN LIÊN HỆ
+                        </h2>
+                        <ul class="footer-list__contact">
+                            <li><i class="fas fa-map-marked-alt"></i>Thừa Thiên Huế</li>
+                            <li>
+                                <a href="#" class="link___phone"><i class="fas fa-phone-square"></i>076 922 0162</a>
+                            </li>
+                            <li >
+                                <a href="#" class="link__gmail"><i class="fas fa-envelope"></i>kopiko@gmail.com.vn</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link__skype"><i class="fab fa-skype"></i>kopiko</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-list-link__follow">
+                            <li>
+                                <a href="#" >
+                                    <img src="https://i...content-available-to-author-only...8.com/fluent/50/000000/facebook-new.png"/></a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://i...content-available-to-author-only...8.com/fluent/48/000000/instagram-new.png"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://i...content-available-to-author-only...8.com/fluent/48/000000/twitter.png"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="https://i...content-available-to-author-only...8.com/fluent/48/000000/gmail--v2.png"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__link together__block ">
+                        <h2 class="footer__link-title ">
+                           LIÊN KẾT
+                        </h2>
+                        <ul class="footer-list__link">
+                            <li>
+                                <a href="#" class="link__link-1">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link__link-2">Thời trang Nam</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link__link-3">Thời trang Nữ</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link__link-4">Blogs</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link__link-5">Liên hệ</a>
+                            </li>
+                        </ul>
+ 
+                    </div>
+                    <div class="footer__support together__block ">
+                        <h2 class="footer__support-title">
+                          HỖ TRỢ
+                        </h2>
+                        <ul class="footer-list__support">
+                            <li>
+                                <a href="#" class="link__support-1">Hướng dẫn mua hàng</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link__support-2">Hướng dẫn thanh toán</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link__support-3">Chính sách bảo hành</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link__support-4">Chính sách đổi trả</a>
+                            </li>
+                            <li>
+                                <a href="#" class="link__support-5">Tư vấn khách hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-link__application together__block ">
+                        <h2 class="footer-link__application-title">
+                            TẢI ỨNG DỤNG TRÊN
+                        </h2>
+                        <p class="infomation__application-text">
+                            Ứng dụng Mona Watch hiện có sẵn trên Google Play & App Store. Tải nó ngay.
+                        </p>
+                        <div class="logo__application-dowload">
+                            <a href="" class="logo__application-dowload-CHPlay">
+                                <img width="181" height="45" src="http://m...content-available-to-author-only...a.net/donghohaitrieu/wp-content/uploads/2019/07/img-googleplay.jpg" 
+                                class="attachment-original size-original" alt="">
+                            </a>
+                        </div>
+                        <div class="logo__application-dowload">
+                            <a href="" class="logo__application-dowload-AppStore">
+                                <img width="181" height="45" src="http://m...content-available-to-author-only...a.net/donghohaitrieu/wp-content/uploads/2019/07/img-appstore.jpg" 
+                                class="attachment-original size-original" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="footer-pay">
+                <ul class="footer-pay_list">
+                    <li>
+                        <svg viewBox="0 0 38 24" xmlns="http://w...content-available-to-author-only...3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-visa">
+                            <title id="pi-visa">Visa</title>
+                            <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path>
+                            <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+                            <path d="M28.3 10.1H28c-.4 1-.7 1.5-1 3h1.9c-.3-1.5-.3-2.2-.6-3zm2.9 5.9h-1.7c-.1 0-.1 0-.2-.1l-.2-.9-.1-.2h-2.4c-.1 0-.2 0-.2.2l-.3.9c0 .1-.1.1-.1.1h-2.1l.2-.5L27 8.7c0-.5.3-.7.8-.7h1.5c.1 0 .2 0 .2.2l1.4 6.5c.1.4.2.7.2 1.1.1.1.1.1.1.2zm-13.4-.3l.4-1.8c.1 0 .2.1.2.1.7.3 1.4.5 2.1.4.2 0 .5-.1.7-.2.5-.2.5-.7.1-1.1-.2-.2-.5-.3-.8-.5-.4-.2-.8-.4-1.1-.7-1.2-1-.8-2.4-.1-3.1.6-.4.9-.8 1.7-.8 1.2 0 2.5 0 3.1.2h.1c-.1.6-.2 1.1-.4 1.7-.5-.2-1-.4-1.5-.4-.3 0-.6 0-.9.1-.2 0-.3.1-.4.2-.2.2-.2.5 0 .7l.5.4c.4.2.8.4 1.1.6.5.3 1 .8 1.1 1.4.2.9-.1 1.7-.9 2.3-.5.4-.7.6-1.4.6-1.4 0-2.5.1-3.4-.2-.1.2-.1.2-.2.1zm-3.5.3c.1-.7.1-.7.2-1 .5-2.2 1-4.5 1.4-6.7.1-.2.1-.3.3-.3H18c-.2 1.2-.4 2.1-.7 3.2-.3 1.5-.6 3-1 4.5 0 .2-.1.2-.3.2M5 8.2c0-.1.2-.2.3-.2h3.4c.5 0 .9.3 1 .8l.9 4.4c0 .1 0 .1.1.2 0-.1.1-.1.1-.1l2.1-5.1c-.1-.1 0-.2.1-.2h2.1c0 .1 0 .1-.1.2l-3.1 7.3c-.1.2-.1.3-.2.4-.1.1-.3 0-.5 0H9.7c-.1 0-.2 0-.2-.2L7.9 9.5c-.2-.2-.5-.5-.9-.6-.6-.3-1.7-.5-1.9-.5L5 8.2z" fill="#142688"></path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 38 24" xmlns="http://w...content-available-to-author-only...3.org/2000/svg" role="img" width="38" height="24" aria-labelledby="pi-master">
+                            <title id="pi-master">Mastercard</title>
+                            <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path>
+                            <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+                            <circle fill="#EB001B" cx="15" cy="12" r="7"></circle>
+                            <circle fill="#F79E1B" cx="23" cy="12" r="7"></circle>
+                            <path fill="#FF5F00" d="M22 12c0-2.4-1.2-4.5-3-5.7-1.8 1.3-3 3.4-3 5.7s1.2 4.5 3 5.7c1.8-1.2 3-3.3 3-5.7z"></path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg xmlns="http://w...content-available-to-author-only...3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-american_express">
+                            <title id="pi-american_express">American Express</title>
+                            <g fill="none">
+                                <path fill="#000" d="M35,0 L3,0 C1.3,0 0,1.3 0,3 L0,21 C0,22.7 1.4,24 3,24 L35,24 C36.7,24 38,22.7 38,21 L38,3 C38,1.3 36.6,0 35,0 Z" opacity=".07"></path>
+                                <path fill="#006FCF" d="M35,1 C36.1,1 37,1.9 37,3 L37,21 C37,22.1 36.1,23 35,23 L3,23 C1.9,23 1,22.1 1,21 L1,3 C1,1.9 1.9,1 3,1 L35,1"></path>
+                                <path fill="#FFF" d="M8.971,10.268 L9.745,12.144 L8.203,12.144 L8.971,10.268 Z M25.046,10.346 L22.069,10.346 L22.069,11.173 L24.998,11.173 L24.998,12.412 L22.075,12.412 L22.075,13.334 L25.052,13.334 L25.052,14.073 L27.129,11.828 L25.052,9.488 L25.046,10.346 L25.046,10.346 Z M10.983,8.006 L14.978,8.006 L15.865,9.941 L16.687,8 L27.057,8 L28.135,9.19 L29.25,8 L34.013,8 L30.494,11.852 L33.977,15.68 L29.143,15.68 L28.065,14.49 L26.94,15.68 L10.03,15.68 L9.536,14.49 L8.406,14.49 L7.911,15.68 L4,15.68 L7.286,8 L10.716,8 L10.983,8.006 Z M19.646,9.084 L17.407,9.084 L15.907,12.62 L14.282,9.084 L12.06,9.084 L12.06,13.894 L10,9.084 L8.007,9.084 L5.625,14.596 L7.18,14.596 L7.674,13.406 L10.27,13.406 L10.764,14.596 L13.484,14.596 L13.484,10.661 L15.235,14.602 L16.425,14.602 L18.165,10.673 L18.165,14.603 L19.623,14.603 L19.647,9.083 L19.646,9.084 Z M28.986,11.852 L31.517,9.084 L29.695,9.084 L28.094,10.81 L26.546,9.084 L20.652,9.084 L20.652,14.602 L26.462,14.602 L28.076,12.864 L29.624,14.602 L31.499,14.602 L28.987,11.852 L28.986,11.852 Z"></path>
+                            </g>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 38 24" xmlns="http://w...content-available-to-author-only...3.org/2000/svg" width="38" height="24" role="img" aria-labelledby="pi-paypal">
+                            <title id="pi-paypal">PayPal</title>
+                            <path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"></path>
+                            <path fill="#fff" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"></path>
+                            <path fill="#003087" d="M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z"></path>
+                            <path fill="#3086C8" d="M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z"></path>
+                            <path fill="#012169" d="M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z"></path>
+                        </svg>
+                    </li>
+                    <li>
+                        <svg xmlns="http://w...content-available-to-author-only...3.org/2000/svg" role="img" viewBox="0 0 38 24" width="38" height="24" aria-labelledby="pi-discover">
+                            <title id="pi-discover">Discover</title>
+                            <path d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z" fill="#000" opacity=".07"></path>
+                            <path d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32" fill="#FFF"></path>
+                            <path d="M37 16.95V21c0 1.1-.9 2-2 2H23.228c7.896-1.815 12.043-4.601 13.772-6.05z" fill="#EDA024"></path>
+                            <path fill="#494949" d="M9 11h20v2H9z"></path>
+                            <path d="M22 12c0 1.7-1.3 3-3 3s-3-1.4-3-3 1.4-3 3-3c1.7 0 3 1.3 3 3z" fill="#EDA024"></path>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+    </div>
+
+    <!-- Form Login / Register -->
+    <!-- Login -->
+    <div id="login" class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__wrap">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="./asset/img/avatar.jpg" alt="Avatar" class="avatar">
+                </div>
+          
+                <div class="container-modal">
+                    <label class="log__label" for="uname"><b>Username</b></label>
+                    <input class="log__input" type="text" placeholder="Enter Username" name="uname" required>
+            
+                    <label class="log__label" for="psw"><b>Password</b></label>
+                    <input class="log__input" type="password" placeholder="Enter Password" name="psw" required>
+                    
+                    <button class="btn-log" type="submit">Login</button>
+                    <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+          
+                <div class="container-modal" style="background-color:#f1f1f1">
+                    <!-- <button class="btn-log" type="button" onclick="document.getElementById('login').style.display='none'" class="cancelbtn">Cancel</button> -->
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Register -->
+    <div id="register" class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__wrap">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('register').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="./asset/img/avatar.jpg" alt="Avatar" class="avatar">
+                </div>
+          
+                <div class="container-modal">
+                    <label class="log__label" for="uname"><b>Username</b></label>
+                    <input class="log__input" type="text" placeholder="Enter Username" name="uname" required>
+            
+                    <label class="log__label" for="psw"><b>Password</b></label>
+                    <input class="log__input" type="password" placeholder="Enter Password" name="psw" required>
+    
+                    <label class="log__label" for="psw"><b>Nhập lại mật khẩu</b></label>
+                    <input class="log__input" type="password" placeholder="Enter Password" name="psw" required>
+                    
+                    <button class="btn-log" type="submit">Login</button>
+                    <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+          
+                <div class="container-modal" style="background-color:#f1f1f1">
+                    <!-- <button class="btn-log" type="button" onclick="document.getElementById('register').style.display='none'" class="cancelbtn">Cancel</button> -->
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Modal Layout -->
+    <!-- <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body"> -->
+            <!-- Register Form -->
+            <!-- <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng ký</h3>
+                        <span class="auth-form__switch-btn">Đăng nhập</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập Email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <p class="auth-form__policy-text">
+                            Bằng việc đăng kí, bạn đã đồng ý với Apps về
+                            <a href="" class="auth-form__text-link">Điều khoản dịch vụ </a> & 
+                            <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                        </p>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn-primary">ĐĂNG KÝ</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+            <!-- End Register Form -->
+
+            <!-- Login Form -->
+            <!-- <div id="login" class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form__switch-btn">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập Email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Mật khẩu của bạn">
+                        </div>
+                    </div>
+
+                    <div class="auth-form__aside">
+                        <div class="auth-form__help">
+                            <a href="" class="auth-form__help-link auth-form__help-forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help-separate"></span>
+                            <a href="" class="auth-form__help-link">Cần trợ giúp?</a>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__controls">
+                        <button class="btn auth-form__controls-back btn--normal">TRỞ LẠI</button>
+                        <button class="btn btn-primary">ĐĂNG NHẬP</button>
+                    </div>
+                </div>
+
+                <div class="auth-form__socials">
+                    <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-facebook"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Facebook
+                        </span>
+                    </a>
+                    <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                        <i class="auth-form__socials-icon fab fa-google"></i>
+                        <span class="auth-form__socials-title">
+                            Kết nối với Google
+                        </span>
+                    </a>
+                </div>
+            </div> -->
+            <!-- End Login Form -->
+
+        <!-- </div>
+    </div> -->
+
+    <!-- Btn Back Home -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i
+    class="fa fa-chevron-up" aria-hidden="true"></i>
+    </button>
+    <!--  -->
+    <!-- Script -->
+    <script src="./asset/plugins/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./asset/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./asset/js/app.js"></script>
+    
+    <!-- <script src="https://c...content-available-to-author-only...y.com/jquery-3.6.0.slim.min.js" ></script>
+    <script src="https://c...content-available-to-author-only...e.com/ajax/libs/popper.js/2.9.1/umd/popper.min.js"></script>
+    <script src="./asset/bootstrap-4.5.3/js/bootstrap.min.js"></script>      -->
+
+
+</body>
+</html>

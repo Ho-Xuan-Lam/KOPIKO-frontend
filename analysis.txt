@@ -1,0 +1,39 @@
+--WEB KOPIKO
+
+Header
+	1. Heading
+	heading__contact
+	heading__socials
+
+	2. Header with Search
+	header__logo
+	header__search
+	header__cart
+
+	3. Header Navbar
+	ul li*5
+
+
+
+
+Lâm
+Trang sản phẩm theo danh mục
+trang tìm kiếm
+trang chi tiết sản phẩm
+
+Hoàng
+trang quản lý tài khoản người dùng
+trang thanh toán
+Giỏ hàng
+
+Thuận
+Home
+
+Chưa phân
+trang lịch sử mua hàng
+Chi tiết hoá đơn
+
+Nghĩa
+thương hiệu
+sale
+form đăng nhập đăng ký
