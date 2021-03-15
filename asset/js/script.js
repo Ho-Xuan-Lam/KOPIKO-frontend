@@ -28,5 +28,14 @@ btnMinus.onclick =  function(e) {
                     $('#quantity').val(quantity - 1);
                     }
 }    
-    
+  
+// let reportStar = document.querySelector('.report-star');
+// reportStar.onclick = function(){
+//     $('.report-star').addClass('.text-warning');
+// } 
         
+$(document).ready(function(){
+    $(".report-star").click(function(){
+      $(".report-star").addClass(".text-warning");
+    });
+});
