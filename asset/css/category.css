@@ -25,7 +25,7 @@ a {
     font-size: 1.5rem;
 } 
 
-.category-menu {
+.category-menu, .category-menu-1 {
     border-right: 1px  solid var(--border-color);
 }
 
@@ -92,10 +92,8 @@ a {
 
 @media only screen and (max-width: 1199.98px) { 
 
-    .category-menu {
-        position: relative;
-        top: auto;
-        left: 0;
+    .category-menu-1 {
+        display: none;
     }
     .btn-show-category-menu {
         display: block;
