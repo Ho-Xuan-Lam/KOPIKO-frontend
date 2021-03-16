@@ -329,7 +329,7 @@
             <div class="row pl-5">    
                 <h2 class=" pl-4 category-infor-name text-uppercase font-weight-bold">Ao phong nam</h2>
             </div>
-            <div class="row pb-1">
+            <div class="row pb-5">
                 <div class="col-sm-6">
                     <div class="row" style="display: flex; justify-content: center;">
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -492,14 +492,20 @@
                                     </div>
                                 </div> 
                                 <div class="report-star col-lg-3 float-left">
-                                    <label for="">Mức độ hài lòng:</label>
-                                    <select name="report-stars" id="report">
-                                    <option value="5">Rất hài lòng</option>
-                                    <option value="4">Hài lòng</option>
-                                    <option value="3">Trung bình</option>
-                                    <option value="2">Không hài lòng</option>
-                                    <option value="1">Rất không hài lòng</option>
-                                    </select>
+                                    <div class="row">
+                                        <label for="">Mức độ hài lòng:</label>
+                                        <select name="report-stars" id="report">
+                                            <option value="5">Rất hài lòng</option>
+                                            <option value="4">Hài lòng</option>
+                                            <option value="3">Trung bình</option>
+                                            <option value="2">Không hài lòng</option>
+                                            <option value="1">Rất không hài lòng</option>
+                                        </select>
+                                    </div>
+                                    <div class="row py-3">
+                                        <label for="#">Thêm hình ảnh:</label>
+                                        <input type="file" id="img-report" name="Chọn File">
+                                    </div>
                                 </div>
                                 <div class="col-lg7" style="overflow: scroll;">
                                     <div class="row">
@@ -507,10 +513,11 @@
                                     </div>
 
                                     <textarea id="comment" name="comment" cols="55" rows="6" required="" ></textarea>
-                                    <div class="row">
-                                        <a class="btn btn-primary" type="button">Viết đánh giá</a>
-                                    </div>
+                                    
                                 </div> 
+                                <div class="row">
+                                    <a class="btn margin__btn-add-cart" type="button">Viết đánh giá</a>
+                                </div>
                                  
                             </div>    
                         </form>
